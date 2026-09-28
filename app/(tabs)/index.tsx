@@ -9,34 +9,34 @@ export default function App() {
   return (
     <SafeAreaView className="flex-1 bg-background p-5">
       <View className="flex-1 p-5">
-      <Text className="text-xl font-bold text-success">
-        Welcome to NativeWind!
+      <Text className="text-5xl font-sans-extrabold">
+       Home
       </Text>
 
       <Link
         href="/onboading"
-        className="mt-4 rounded bg-primary p-4 text-white"
+        className="mt-4 font-sans-bold rounded bg-primary p-4 text-white"
       >
         Onboarding
       </Link>
 
       <Link
         href="/(auth)/sign-in"
-        className="mt-4 rounded bg-primary p-4 text-white"
+        className="mt-4 font-sans-bold rounded bg-primary p-4 text-white"
       >
         Sign In
       </Link>
 
       <Link
         href="/(auth)/sign-up"
-        className="mt-4 rounded bg-primary p-4 text-white"
+        className="mt-4 font-sans-bold rounded bg-primary p-4 text-white"
       >
         Sign Up
       </Link>
 
-      <Link
+      {/* <Link
         href="/subscriptions/spotify"
-        className="mt-4 rounded bg-primary p-4 text-white"
+      
       >
         Spotify Subscription
       </Link>
@@ -46,10 +46,10 @@ export default function App() {
           pathname: "/subscriptions/[id]",
           params: { id: "claude" },
         }}
-        className="mt-4 rounded bg-primary p-4 text-white"
+        
       >
         Claude Subscription
-      </Link>
+      </Link> */}
       </View>
     </SafeAreaView>
   );
